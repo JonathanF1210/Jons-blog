@@ -9,15 +9,33 @@
 </head>
 
 <body>
-  Hello world
+  <div class="home-header">
+    <h1>Jon's Blog</h1>
+      <p>This is my blog! It's my first time doing something like         this so I'm not sure what to expect. I guess I'll write about       my educational journey. Plus updates on my personal and             professional life. I hope to look back at this in the future        and see how far I've progressed.</p>
+  </div>
+  <div class="card">
+  <form action="/api/v1/newPost" method="POST" id="postForm">
+    <div class="flex-container">
+      <div class="form-row">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+      <div class="form-row">
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date" required>
+      </div>
+      <div class="form-row">
+        <label for="description">Description:</label>
+       <textarea id="description" name="description" required></textarea>
+      </div>
+      <div>
+        <br>
+      </div>
+      <input type="submit" value="Submit">
+    </div>
+    </div>
+  </form>
   <script src="script.js"></script>
-
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>
 
 </html>
